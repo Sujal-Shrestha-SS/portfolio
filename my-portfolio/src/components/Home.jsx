@@ -16,9 +16,15 @@ const Home = () => {
       </Navbar>
 
       <Hero> 
-        <Title>Hello, I'm Sujal Shrestha</Title>
-        <Subtitle>Aspiring IT Engineer</Subtitle>
+
+          <Title>Hello, I'm Sujal Shrestha</Title>
+          <Subtitle>Aspiring IT Engineer</Subtitle>
+
       </Hero>
+
+      <ImageCard>
+              <ProfileImage src="images/profile.png" alt="Profile Picture"></ProfileImage>
+          </ImageCard>
 
     </Container>
   )
@@ -78,6 +84,8 @@ const Hero = styled.div`
   left: 10%;
 `;
 
+
+
 const Title = styled.h1`
   font-size: 64px;
   margin-bottom: 10px;
@@ -85,4 +93,33 @@ const Title = styled.h1`
 const Subtitle = styled.h3`
   font-weight: 300;
   color: #9ed9c8;
+`
+
+
+
+const ImageCard = styled.div`
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  width: 420px;
+  height: 520px;
+  border-radius: 30px;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+
+  &:hover{
+    transform: translateY()(-15px) scale(1.03);
+    box-shadow: 0 35px 70px rgba(0,0,0,0.8);
+  }
+`
+
+const ProfileImage = styled.img`
+  
 `
