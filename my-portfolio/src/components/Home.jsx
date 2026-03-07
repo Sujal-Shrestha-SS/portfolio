@@ -104,6 +104,7 @@ const ImageCard = styled.div`
   width: 420px;
   height: 520px;
   border-radius: 30px;
+  overflow: hidden; //clips the image inside the card
 
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(10px);
@@ -121,5 +122,14 @@ const ImageCard = styled.div`
 `
 
 const ProfileImage = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   
+
+  transition: transform 0.5s ease;
+
+  ${ImageCard}:hover &{
+    transform: scale(1.08);
+  }
 `
