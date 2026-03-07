@@ -15,6 +15,11 @@ const Home = () => {
 
       </Navbar>
 
+      <Hero> 
+        <Title>Hello, I'm Sujal Shrestha</Title>
+        <Subtitle>Aspiring IT Engineer</Subtitle>
+      </Hero>
+
     </Container>
   )
 }
@@ -22,7 +27,12 @@ const Home = () => {
 export default Home
 
 const Container =styled.div`
-  background-color: red;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(135deg, #0b1d3a, #0f3d2e);
+  color: white;
+  font-family: "Poppins", sans-serif;
 `
 
 const Navbar = styled.nav`
@@ -36,5 +46,16 @@ const Navbar = styled.nav`
 
 const NavLink = styled(Link)`
   
+
+`
+
+const Hero = styled.div`
+
+`;
+
+const Title = styled.h1`
+
+`
+const Subtitle = styled.h3`
 
 `
