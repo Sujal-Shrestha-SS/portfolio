@@ -82,5 +82,6 @@ const Title = styled.h1`
   margin-bottom: 10px;
 `
 const Subtitle = styled.h3`
-
+  font-weight: 300;
+  color: #9ed9c8;
 `
