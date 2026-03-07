@@ -78,7 +78,8 @@ const Hero = styled.div`
 `;
 
 const Title = styled.h1`
-
+  font-size: 64px;
+  margin-bottom: 10px;
 `
 const Subtitle = styled.h3`
 
