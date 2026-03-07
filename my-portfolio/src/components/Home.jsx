@@ -101,8 +101,8 @@ const ImageCard = styled.div`
   position: absolute;
   top: 25%;
   right: 10%;
-  width: 420px;
-  height: 520px;
+  width: 620px;
+  height: 680px;
   border-radius: 30px;
   overflow: hidden; //clips the image inside the card
 
