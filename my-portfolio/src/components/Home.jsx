@@ -45,7 +45,29 @@ const Navbar = styled.nav`
 `
 
 const NavLink = styled(Link)`
-  
+  text-decoration: none;
+  color: white;
+  position: relative;
+
+  &:hover{
+    color: #00ffa6;
+  }
+
+  &::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #00ffa6;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+  }
+
+  &:hover::after{
+    width: 100%;
+  }
+ 
 
 `
 
