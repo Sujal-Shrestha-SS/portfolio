@@ -37,10 +37,11 @@ const Container =styled.div`
 
 const Navbar = styled.nav`
   display: flex;
-  gap: 40px;
-  justify-content: space-between;
-  padding: 25px 60px;
- 
+  gap: 120px;
+  justify-content: center;
+  padding: 45px 60px;
+  font-size: 24px;
+  
 
 `
 
