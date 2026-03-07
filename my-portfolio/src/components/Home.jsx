@@ -72,7 +72,9 @@ const NavLink = styled(Link)`
 `
 
 const Hero = styled.div`
-
+  position: absolute;
+  top: 40%;
+  left: 10%;
 `;
 
 const Title = styled.h1`
