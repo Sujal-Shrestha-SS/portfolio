@@ -51,7 +51,10 @@ const AboutTitle = styled.h2`
 `
 
 const AboutText = styled.p`
-  
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #cfd8dc;
 
 
 `
