@@ -6,7 +6,7 @@ const About = () => {
   return (
 
     <Container>
-      <NavbarMenu />
+      
 
     
     <AboutSection id="about">
@@ -34,7 +34,15 @@ const Container = styled.div`
 `
 
 const AboutSection = styled.section`
-  /* height: 100vh; */
+  height: 100vh;
+  
+  background: #081628;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 10%;
 `
 
 const AboutTitle = styled.h2`
