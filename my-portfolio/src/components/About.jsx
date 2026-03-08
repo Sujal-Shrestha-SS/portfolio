@@ -46,7 +46,8 @@ const AboutSection = styled.section`
 `
 
 const AboutTitle = styled.h2`
-
+  font-size: 48px;
+  margin-bottom: 20px;
 `
 
 const AboutText = styled.p`
