@@ -2,21 +2,16 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from "react-router-dom"
 import About from './About'
+import NavbarMenu from './NavbarMenu'
 const Home = () => {
   return (
 
     <>
     <Container>
 
-     <Navbar>
-      <NavLink href="#home">Home</NavLink>
-      <NavLink href="#about">About Me</NavLink>
-      <NavLink href="#projects">Projects</NavLink>
-      <NavLink href="#design">Graphic Design</NavLink>
-      <NavLink href="#contact">Contact</NavLink>
-    </Navbar>
+      <NavbarMenu />
 
-      <Hero id="home"> 
+      <Hero> 
 
           <Title>Hello, I'm Sujal Shrestha</Title>
           <Subtitle>Aspiring IT Engineer</Subtitle>
@@ -50,42 +45,7 @@ const Container = styled.div`
   font-family: "Poppins", sans-serif;
 `
 
-const Navbar = styled.nav`
-  display: flex;
-  gap: 120px;
-  justify-content: center;
-  padding: 45px 60px;
-  font-size: 24px;
-  
 
-`
-
-const NavLink = styled.a`
-  text-decoration: none;
-  color: white;
-  position: relative;
-
-  &:hover{
-    color: #00ffa6;
-  }
-
-  &::after{
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: #00ffa6;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    transition: 0.3s;
-  }
-
-  &:hover::after{
-    width: 100%;
-  }
- 
-
-`
 
 const Hero = styled.div`
   position: absolute;
