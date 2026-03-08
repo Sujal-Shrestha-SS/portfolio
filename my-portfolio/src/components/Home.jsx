@@ -1,21 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from "react-router-dom"
+import About from './About'
 const Home = () => {
   return (
+
+    <>
     <Container>
 
-      <Navbar>
+     <Navbar>
+      <NavLink href="#home">Home</NavLink>
+      <NavLink href="#about">About Me</NavLink>
+      <NavLink href="#projects">Projects</NavLink>
+      <NavLink href="#design">Graphic Design</NavLink>
+      <NavLink href="#contact">Contact</NavLink>
+    </Navbar>
 
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/">About me</NavLink>
-        <NavLink to="/">Projects</NavLink>
-        <NavLink to="/">Graphic Design</NavLink>
-        <NavLink to="/">Contact</NavLink>
-
-      </Navbar>
-
-      <Hero> 
+      <Hero id="home"> 
 
           <Title>Hello, I'm Sujal Shrestha</Title>
           <Subtitle>Aspiring IT Engineer</Subtitle>
@@ -24,15 +25,23 @@ const Home = () => {
 
       <ImageCard>
               <ProfileImage src="images/profile.png" alt="Profile Picture"></ProfileImage>
-          </ImageCard>
+      </ImageCard>
+
+      
 
     </Container>
+
+
+
+    <About />
+
+    </>
   )
 }
 
 export default Home
 
-const Container =styled.div`
+const Container = styled.div`
   height: 100vh;
   width: 100%;
   position: relative;
@@ -51,7 +60,7 @@ const Navbar = styled.nav`
 
 `
 
-const NavLink = styled(Link)`
+const NavLink = styled.a`
   text-decoration: none;
   color: white;
   position: relative;
@@ -116,7 +125,7 @@ const ImageCard = styled.div`
 
 
   &:hover{
-    transform: translateY()(-15px) scale(1.03);
+    transform: translateY(-15px) scale(1.03);
     box-shadow: 0 35px 70px rgba(0,0,0,0.8);
   }
 `
