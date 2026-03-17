@@ -62,8 +62,8 @@ const ProjectBlock = styled.div`
 `
 
 const ImageCard = styled.div`
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
   overflow: hidden;
 
@@ -80,7 +80,15 @@ const ImageCard = styled.div`
 `
 
 const ProjectImage = styled.img`
-  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+
+  ${ImageCard}:hover &{
+    transform: scale(1.08);
+  }
 
 `
 
