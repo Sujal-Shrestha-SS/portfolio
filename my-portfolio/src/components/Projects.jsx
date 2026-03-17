@@ -56,7 +56,9 @@ const ProjectWrapper = styled.div`
 `
 
 const ProjectBlock = styled.div`
-
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 `
 
 const ImageCard = styled.div`
