@@ -1,0 +1,28 @@
+const projects = [
+  {
+    title: "TaskCtrl",
+    image: "images/TaskCtrl.png",
+    link: "https://chelshrestha.free.nf",
+    description: "This is a todo app"
+  },
+  {
+    title: "CashFlow",
+    image: "images/CashFlow.jpeg",
+    link: "https://sujalshresthaa.gt.tc",
+    description: "This is a personal expense tracking app"
+  },
+  {
+    title: "ClubOps",
+    image: "images/ClubOps.png",
+    link: "https://clubops.page.gd",
+    description: "This is a football club management system"
+  },
+  {
+    title: "RunTime",
+    image: "images/RunTime.jpeg",
+    link: "https://runtimequiz.netlify.app",
+    description: "This is a web-quiz app"
+  }
+]
+
+export default projects
