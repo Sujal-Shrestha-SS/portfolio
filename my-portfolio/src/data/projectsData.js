@@ -7,7 +7,7 @@ const projects = [
   },
   {
     title: "CashFlow",
-    image: "images/CashFlow.jpeg",
+    image: "images/CashFlow.png",
     link: "https://sujalshresthaa.gt.tc",
     description: "This is a personal expense tracking app"
   },
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: "RunTime",
-    image: "images/RunTime.jpeg",
+    image: "images/RunTime.png",
     link: "https://runtimequiz.netlify.app",
     description: "This is a web-quiz app"
   }
