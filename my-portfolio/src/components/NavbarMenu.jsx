@@ -21,7 +21,14 @@ const Navbar = styled.nav`
   justify-content: center;
   padding: 45px 60px;
   font-size: 24px;
-  
+  position: fixed;
+  width: 100%;
+  //<nav> is a block-level element, so normally it takes width: 100% automatically
+
+  // When you use position: fixed, it’s taken out of normal flow and behaves more like a shrink-to-fit box
+
+  //So it no longer stretches full width unless you explicitly tell it to
+    
 
 `
 
