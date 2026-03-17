@@ -93,5 +93,6 @@ const ProjectImage = styled.img`
 `
 
 const ProjectInfo = styled.h2`
-
+  font-size: 20px;
+  color: #cfd8bc;
 `
