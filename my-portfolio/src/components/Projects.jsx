@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import projects from '../data/projectsData'
 
 const Projects = () => {
   return (
@@ -7,16 +8,25 @@ const Projects = () => {
       <Title>Personal Projects</Title>
 
       <ProjectWrapper>
+        {projects.map((project, index) => (
 
-        <ProjectBlock>
+        <ProjectBlock key={index}>
+
+          <a 
+            href={project.link}
+            target="_blank"
+            >
           <ImageCard>
             
-            <ProjectImage src="images/TaskCtrl.png" alt="Todo App" />
+            <ProjectImage src={project.image} alt={project.title} />
 
           </ImageCard>
+          </a>
 
-          <ProjectInfo>This is a todo app</ProjectInfo>
+          <ProjectInfo>{project.description}</ProjectInfo>
         </ProjectBlock>
+
+        ))}
 
       </ProjectWrapper>
     </Container>
@@ -39,6 +49,9 @@ const Title = styled.h1`
 `
 const ProjectWrapper = styled.div`
   width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // 2 per row
+  gap: 40px;
 `
 
 const ProjectBlock = styled.div`
