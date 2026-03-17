@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import { Link } from "react-router-dom"
 import About from './About'
 import NavbarMenu from './NavbarMenu'
+import Projects from './Projects'
 const Home = () => {
   return (
 
@@ -29,6 +30,8 @@ const Home = () => {
 
 
     <About />
+
+    <Projects />
 
     </>
   )
