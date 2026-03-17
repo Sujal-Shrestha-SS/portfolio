@@ -4,6 +4,8 @@ import styled from 'styled-components'
 const About = () => {
   return (
     <Container>
+
+      <ContentWrapper>
       <ImageCard>
 
         <ProfileImage src="images/profile.png" alt="Profile Picture" />
@@ -41,7 +43,7 @@ const About = () => {
 
         </InfoRow>
       </RightContent>
-
+    </ContentWrapper>
     </Container>
   )
 }
@@ -58,7 +60,12 @@ const Container = styled.div`
     justify-content: center;
     font-family: "Poppins", sans-serif;
 `
-
+const ContentWrapper = styled.div`
+    width: 85%;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+`
 const ImageCard = styled.div`
     width: 420px;
     height: 520px;
