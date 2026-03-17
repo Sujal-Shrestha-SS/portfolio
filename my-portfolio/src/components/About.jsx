@@ -63,10 +63,10 @@ const ImageCard = styled.div`
     width: 420px;
     height: 520px;
     border-radius: 30px;
-    overflow: hidden;
+    overflow: hidden; //clips the image inside the card
     
     background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px); //applies visual effect to whatever is behind an element not the element
     border: 1px solid rgba(255,255,255,0.1);
     box-shadow: 0 25px 50px rgba(0,0,0,0.6);
 
@@ -86,7 +86,7 @@ const ProfileImage = styled.img`
 
     ${ImageCard}:hover &{
       transform: scale(1.08);
-    }
+    } // Selects the current component (&) when its parent ImageCard is hovered
 `
 
 const RightContent = styled.div`
