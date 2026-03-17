@@ -4,7 +4,7 @@ import projects from '../data/projectsData'
 
 const Projects = () => {
   return (
-    <Container>
+    <Container id="projects">
       <Title>Personal Projects</Title>
 
       <ProjectWrapper>
@@ -46,7 +46,8 @@ const Container = styled.div`
 `
 const Title = styled.h1`
   font-size: 42px;
-  margin: 50px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 `
 const ProjectWrapper = styled.div`
   width: 60%;
