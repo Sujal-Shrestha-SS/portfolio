@@ -8,7 +8,8 @@ const Projects = () => {
       <Title>Personal Projects</Title>
 
       <ProjectWrapper>
-        {projects.map((project, index) => (
+        {projects.map((project, index) => ( //.map() automatically gives you two things 
+        // project - the current item ; index - the position of that item in the array
 
         <ProjectBlock key={index}>
 
