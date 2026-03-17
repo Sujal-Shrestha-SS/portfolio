@@ -62,7 +62,21 @@ const ProjectBlock = styled.div`
 `
 
 const ImageCard = styled.div`
+  width: 50%;
+  height: 50%;
+  border-radius: 20px;
+  overflow: hidden;
 
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover{
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  }
 `
 
 const ProjectImage = styled.img`
