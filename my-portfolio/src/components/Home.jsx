@@ -4,6 +4,7 @@ import { Link } from "react-router-dom"
 import About from './About'
 import NavbarMenu from './NavbarMenu'
 import Projects from './Projects'
+import Designs from './Designs'
 const Home = () => {
   return (
 
@@ -32,6 +33,8 @@ const Home = () => {
     <About />
 
     <Projects />
+
+    <Designs />
 
     </>
   )
