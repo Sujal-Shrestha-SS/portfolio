@@ -48,17 +48,31 @@ const DesignWrapper = styled.div`
 `
 
 const DesignBlock = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  width: 100%;
+  height: 80%;
+  border-radius: 20px;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+
+  &:hover{
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  }
 `
 
 const DesignImage = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /* object-fit: fill; */
 
   transition: transform 0.4s ease;
+  
 
   ${DesignBlock}:hover &{
     transform: scale(1.08);
