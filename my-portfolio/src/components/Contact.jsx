@@ -24,9 +24,21 @@ const Contact = () => {
           <Socials>
           <Title>Socials</Title>
 
-          <Icon />
-          <Icon />
-          <Icon />
+          <SocialIcons>
+              <a href="https://linkedin.com/sujalshresthaa" target="_blank">
+                <FaLinkedin />
+              </a>
+
+              <a href="https://instagram.com/sujal.shresthaaa" target="_blank">
+                <FaInstagram />
+              </a>
+
+              <a href="https://github.com/Sujal-Shrestha-SS" target="_blank">
+                <FaGithub />
+              </a>
+
+          </SocialIcons>
+
           </Socials>
 
         </LeftBlock>
