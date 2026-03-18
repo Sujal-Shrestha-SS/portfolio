@@ -7,13 +7,19 @@ const Contact = () => {
           <GetinTouch>
           <Title>Get in Touch</Title>
 
+            <InfoRow>
+              <FaEnvelope />
+              <span>sujalstha801@gmail.com</span>
+            </InfoRow>
 
-          <Icon /> Gmail
-          <Icon /> Location
+            <InfoRow>
+              <FaMapMarkerAlt />
+              <span>Kathmandu, Nepal</span>
+            </InfoRow>
 
           </GetinTouch>
 
-          <hr></hr>
+          <Divider />
 
           <Socials>
           <Title>Socials</Title>
