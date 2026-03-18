@@ -5,6 +5,7 @@ import About from './About'
 import NavbarMenu from './NavbarMenu'
 import Projects from './Projects'
 import Designs from './Designs'
+import Contact from './Contact'
 const Home = () => {
   return (
 
@@ -35,6 +36,8 @@ const Home = () => {
     <Projects />
 
     <Designs />
+
+    <Contact />
 
     </>
   )
