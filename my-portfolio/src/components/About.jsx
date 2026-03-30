@@ -48,7 +48,7 @@ const About = () => {
 
               <TechItem>
                 <FaJs />
-                <span>JavaScript</span>
+                <span>JS</span>
               </TechItem>
 
               <TechItem>
@@ -178,7 +178,7 @@ const CardText = styled.p`
 
 const TechList = styled.div`
   display: flex;
-  flex-direction: column;
+  
   gap: 12px;
 `
 
@@ -186,6 +186,7 @@ const TechItem = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
+  width: 100px;
 
   padding: 10px 12px;
   border-radius: 8px;
