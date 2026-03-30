@@ -151,5 +151,26 @@ const RightBlock = styled.div`
   color: white;
 `
 
+const FormTitle = styled.h2`
+  margin-bottom: 30px;
+`
+const FormGroup = styled.div`
+
+`
+const Label = styled.label`
+
+`
+
+const Input = styled.input`
+
+`
+
+const TextArea = styled.textarea`
+  
+
+`
+
+const SendMsgBtn = styled.button`
 
 
+`
