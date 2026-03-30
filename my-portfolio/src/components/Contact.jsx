@@ -4,7 +4,7 @@ import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaInstagram, FaGithub } from 'r
 
 const Contact = () => {
   return (
-    <Container>
+    <Container id="contact">
       <ContentWrapper>
 
      

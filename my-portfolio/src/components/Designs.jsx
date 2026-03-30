@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Designs = () => {
   return (
-    <Container id = "designs">
+    <Container id = "design">
       <Title>Passion Projects</Title>
 
       <DesignWrapper>
