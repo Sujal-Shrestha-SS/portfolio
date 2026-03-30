@@ -25,11 +25,12 @@ const About = () => {
 
           <InfoCard>
             <CardTitle>Education</CardTitle>
-            <CardText>
-              IT Engineering <br/>
-              Pokhara University <br />
-              2023 - Present
-            </CardText>
+            <EducationGrid>
+              <span>BE IT</span>
+              <span>Pokhara University</span>
+              <span>2023 - Present</span>
+              <span>5th Sem</span>
+            </EducationGrid>
           </InfoCard>
 
           <InfoCard>
@@ -50,7 +51,7 @@ const About = () => {
                 <FaJs />
                 <span>JS</span>
               </TechItem>
-
+              
               <TechItem>
                 <FaReact />
                 <span>React</span>
@@ -174,19 +175,34 @@ const CardText = styled.p`
   color: #cfd8dc;
   line-height: 1.6;
 `
+const EducationGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.5fr 1fr; /* column widths */
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+
+  span {
+    
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+  }
+`
 
 
 const TechList = styled.div`
   display: flex;
-  
+  flex-wrap: wrap; //allows items to go to next line
   gap: 12px;
 `
 
 const TechItem = styled.div`
-  display: flex;
+  display: grid;
   align-items: center;
   gap: 12px;
-  width: 100px;
+  grid-template-columns: repeat(3, 1fr); //3 per row
+ 
 
   padding: 10px 12px;
   border-radius: 8px;
