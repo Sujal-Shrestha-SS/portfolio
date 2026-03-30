@@ -49,13 +49,28 @@ const Contact = () => {
         </LeftBlock>
 
         <RightBlock>
-          <Title>Contact Me</Title>
+          <FormTitle>Contact Me</FormTitle>
 
+          <FormGroup>
+            <Label>Name</Label>
+            <Input type="text" placeholder="Enter your name" />
+          </FormGroup>
 
+          <FormGroup>
+            <Label>Email</Label>
+            <Input type="email" placeholder="Enter your email" />
+          </FormGroup>
+
+          <FormGroup>
+            <Label>Message</Label>
+            <TextArea placeholder="Write your message..." />
+          </FormGroup>
+
+          <SendMsgBtn>Send Message</SendMsgBtn>
         </RightBlock>
-         </ContentWrapper>
-    </Container>
-  )
+                </ContentWrapper>
+            </Container>
+          )
 }
 
 export default Contact
@@ -85,10 +100,7 @@ const LeftBlock = styled.div`
   color: white;
 `
 
-const RightBlock = styled.div`
-  width: 40%;
-  padding: 40px;
-`
+
 
 const Title = styled.h2`
   margin-bottom: 20px;
@@ -131,3 +143,13 @@ const SocialIcons = styled.div`
     transform: scale(1.2);
   }
 `
+
+const RightBlock = styled.div`
+  width: 40%;
+  padding: 40px;
+  background: #0f172a;
+  color: white;
+`
+
+
+
