@@ -34,11 +34,13 @@ const About = () => {
 
           <InfoCard>
             <CardTitle>Tech Stack</CardTitle>
-            <CardText>
-              HTML CSS JavaScript <br/>
-              React Styled Components <br />
-              Git Figma
-            </CardText>
+            
+            <TechList>
+              <TechItem>
+                <FaHtml5 />
+                <span>HTML</span>
+              </TechItem>
+            </TechList>
           </InfoCard>
 
 
@@ -147,4 +149,31 @@ const CardTitle = styled.h3`
 const CardText = styled.p`
   color: #cfd8dc;
   line-height: 1.6;
+`
+
+
+const TechList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+`
+
+const TechItem = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #1e293b;
+  transition: 0.3s;
+
+  svg {
+    font-size: 20px;
+  }
+
+  &:hover {
+    background: #334155;
+    transform: translateX(5px);
+  }
 `
