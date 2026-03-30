@@ -175,7 +175,14 @@ const Input = styled.input`
 `
 
 const TextArea = styled.textarea`
-  
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #1e293b;
+  color: white;
+  min-height: 120px;
+  resize: none; //prevents placeholder resizing
 
 `
 
