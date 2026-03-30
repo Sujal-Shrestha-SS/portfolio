@@ -31,6 +31,13 @@ const About = () => {
               <span>2023 - Present</span>
               <span>5th Sem</span>
             </EducationGrid>
+
+            <EducationGrid>
+              <span>+2 in Science</span>
+              <span>Trinity International College</span>
+              <span>2021-2023</span>
+              <span>3.84</span>
+            </EducationGrid>
           </InfoCard>
 
           <InfoCard>
