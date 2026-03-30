@@ -166,7 +166,12 @@ const Label = styled.label`
 `
 
 const Input = styled.input`
-
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #1e293b;
+  color: white;
 `
 
 const TextArea = styled.textarea`
