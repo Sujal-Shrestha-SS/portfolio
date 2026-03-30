@@ -160,7 +160,9 @@ const FormGroup = styled.div`
   margin-bottom: 20px;
 `
 const Label = styled.label`
-
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #cbd5f5;
 `
 
 const Input = styled.input`
