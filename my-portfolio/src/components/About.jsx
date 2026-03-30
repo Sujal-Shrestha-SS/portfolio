@@ -40,6 +40,30 @@ const About = () => {
                 <FaHtml5 />
                 <span>HTML</span>
               </TechItem>
+
+              <TechItem>
+                <FaCss3Alt />
+                <span>CSS</span>
+              </TechItem>
+
+              <TechItem>
+                <FaJs />
+                <span>JavaScript</span>
+              </TechItem>
+
+              <TechItem>
+                <FaReact />
+                <span>React</span>
+              </TechItem>
+
+              <TechItem>
+                <FaGitAlt />
+                <span>Git</span>
+              </TechItem>
+
+              
+
+
             </TechList>
           </InfoCard>
 
