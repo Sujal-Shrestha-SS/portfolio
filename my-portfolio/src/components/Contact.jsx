@@ -155,7 +155,9 @@ const FormTitle = styled.h2`
   margin-bottom: 30px;
 `
 const FormGroup = styled.div`
-
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 `
 const Label = styled.label`
 
