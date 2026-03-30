@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaFigma } from "react-icons/fa"
 
 const About = () => {
   return (
