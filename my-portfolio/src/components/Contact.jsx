@@ -149,6 +149,8 @@ const RightBlock = styled.div`
   padding: 40px;
   background: #0f172a;
   color: white;
+  display: flex;
+  flex-direction: column;
 `
 
 const FormTitle = styled.h2`
@@ -187,6 +189,21 @@ const TextArea = styled.textarea`
 `
 
 const SendMsgBtn = styled.button`
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: center; //align-self controls just one child in flex container
+  
 
+  &:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+  }
 
 `
