@@ -38,6 +38,13 @@ const About = () => {
               <span>2021-2023</span>
               <span>3.84</span>
             </EducationGrid>
+
+            <EducationGrid>
+              <span>SEE</span>
+              <span>Xavier International School</span>
+              <span>2021</span>
+              <span>4.0</span>
+            </EducationGrid>
           </InfoCard>
 
           <InfoCard>
@@ -147,6 +154,7 @@ const AboutText = styled.p`
     line-height: 1.7;
     color: #cfd8dc;
     margin-bottom: 40px;
+    text-align: justify;
 `
 
 const InfoRow = styled.div`
