@@ -22,6 +22,12 @@ const projects = [
     image: "images/RunTime.png",
     link: "https://runtimequiz.netlify.app",
     description: "This is a web-quiz app"
+  },
+  {
+    title: "StriveX",
+    image: "images/StriveX.png",
+    link: "https://strivex.rf.gd",
+    description: "This is a tournament management system"
   }
 ]
 
