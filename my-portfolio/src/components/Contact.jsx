@@ -2,11 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa'
 
-const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzRk-FyEAb_IzhjB4RZhpSLYGPz92iLcAVekrFpkroT8MnLjeSEbxMK8jit5hr82Xz87w/exec' // Replace with your Google Apps Script Web App URL
+const SHEET_URL = 'https://script.google.com/macros/s/AKfycbzRk-FyEAb_IzhjB4RZhpSLYGPz92iLcAVekrFpkroT8MnLjeSEbxMK8jit5hr82Xz87w/exec'
 
 const Contact = () => {
   const [formData, setFormData] = React.useState({ name: '', email: '', message: '' })
-  const [status, setStatus] = React.useState('') // 'sending' | 'sent' | 'error'
+  const [status, setStatus] = React.useState('')
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -27,7 +27,7 @@ const Contact = () => {
       setFormData({ name: '', email: '', message: '' })
     } catch (err) {
       setStatus('error')
-      console.log(err);
+      console.log(err)
     }
   }
 
@@ -59,11 +59,9 @@ const Contact = () => {
               <a href="https://linkedin.com/in/sujalshresthaa" target="_blank" rel="noreferrer">
                 <FaLinkedin />
               </a>
-
               <a href="https://instagram.com/sujal.shresthaaa" target="_blank" rel="noreferrer">
                 <FaInstagram />
               </a>
-
               <a href="https://github.com/Sujal-Shrestha-SS" target="_blank" rel="noreferrer">
                 <FaGithub />
               </a>
@@ -122,31 +120,44 @@ const Contact = () => {
 export default Contact
 
 
+/* ─── Styled Components ───────────────────────────────────────────────────── */
+
 const Container = styled.div`
   min-height: 100vh;
   background: linear-gradient(135deg, #0b1d3a, #0f3d2e);
   color: white;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 80px clamp(5%, 7.5vw, 10%);
 `
 
 const ContentWrapper = styled.div`
-  width: 85%;
+  width: 100%;
+  max-width: 1100px;
   display: flex;
-  gap: 80px;
-  align-items: center;
-  margin: auto;
+  gap: clamp(24px, 5vw, 80px);
+  align-items: stretch;
+
+  /* Stack vertically on mobile */
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 const LeftBlock = styled.div`
-  width: 40%;
-  padding: 40px;
+  flex: 1;
+  padding: clamp(24px, 3vw, 40px);
   background: #0f172a;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
   color: white;
+  min-width: 0;
 `
 
 const Title = styled.h2`
-  margin-bottom: 20px;
+  font-size: clamp(18px, 2vw, 24px);
+  margin-bottom: 18px;
 `
 
 const GetInTouch = styled.div``
@@ -155,16 +166,21 @@ const InfoRow = styled.div`
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 10px 0;
+  margin: 12px 0;
+  font-size: clamp(13px, 1.2vw, 15px);
+  color: #cfd8dc;
 
   svg {
-    font-size: 20px;
+    font-size: 18px;
+    color: #38bdf8;
+    flex-shrink: 0;
   }
 `
 
 const Divider = styled.hr`
-  margin: 30px 0;
-  border: 0.5px solid #444;
+  margin: 28px 0;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
 `
 
 const Socials = styled.div``
@@ -176,58 +192,82 @@ const SocialIcons = styled.div`
   a {
     color: white;
     font-size: 24px;
-    transition: 0.3s;
+    transition: color 0.25s ease, transform 0.25s ease;
+    display: inline-flex;
   }
 
   a:hover {
     color: #38bdf8;
-    transform: scale(1.2);
+    transform: translateY(-3px) scale(1.15);
   }
 `
 
 const RightBlock = styled.div`
-  width: 40%;
-  padding: 40px;
+  flex: 1.3;
+  padding: clamp(24px, 3vw, 40px);
   background: #0f172a;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
   color: white;
   display: flex;
   flex-direction: column;
+  min-width: 0;
 `
 
 const FormTitle = styled.h2`
-  margin-bottom: 30px;
+  font-size: clamp(18px, 2vw, 24px);
+  margin-bottom: 28px;
 `
 
 const FormGroup = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 `
 
 const Label = styled.label`
   margin-bottom: 8px;
-  font-size: 14px;
-  color: #cbd5f5;
+  font-size: 13px;
+  color: #94a3b8;
 `
 
 const Input = styled.input`
-  padding: 12px;
+  padding: 11px 14px;
   border-radius: 8px;
-  border: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
   outline: none;
   background: #1e293b;
   color: white;
+  font-size: 14px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &::placeholder { color: #475569; }
+
+  &:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+  }
 `
 
 const TextArea = styled.textarea`
-  padding: 12px;
+  padding: 11px 14px;
   border-radius: 8px;
-  border: none;
+  border: 1.5px solid rgba(255, 255, 255, 0.08);
   outline: none;
   background: #1e293b;
   color: white;
-  min-height: 120px;
-  resize: none;
+  font-size: 14px;
+  min-height: 130px;
+  resize: vertical;
+  font-family: inherit;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &::placeholder { color: #475569; }
+
+  &:focus {
+    border-color: #38bdf8;
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+  }
 `
 
 const StatusMsg = styled.p`
@@ -238,19 +278,19 @@ const StatusMsg = styled.p`
 
 const SendMsgBtn = styled.button`
   margin-top: 10px;
-  padding: 12px;
+  padding: 13px 28px;
   border: none;
   border-radius: 8px;
   background: #38bdf8;
-  color: black;
+  color: #0b1d3a;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s;
   align-self: center;
+  transition: background 0.25s ease, transform 0.2s ease, opacity 0.2s ease;
 
-  &:hover {
+  &:hover:not(:disabled) {
     background: #0ea5e9;
-    transform: scale(1.05);
+    transform: translateY(-2px) scale(1.04);
   }
 
   &:disabled {
