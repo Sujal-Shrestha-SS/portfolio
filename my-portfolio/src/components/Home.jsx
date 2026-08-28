@@ -49,7 +49,7 @@ const Home = () => {
               digital solutions.
             </Description>
             <Buttons>
-              <PrimaryBtn href="/CV.pdf" download>Download CV</PrimaryBtn>
+              <PrimaryBtn href="/resume.pdf" download>Download CV</PrimaryBtn>
               <SecondaryBtn href="#contact">Contact Me</SecondaryBtn>
             </Buttons>
           </Hero>
